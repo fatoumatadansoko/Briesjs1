@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         myErrorPassword.innerHTML = "";
 
         // Vérifier si le champ de saisie du nom est vide après avoir supprimé les espaces au début et à la fin
-        if (myInputNom.value.trim() === "" || myInputNom.value.length < 3>15) {
+        if (myInputNom.value.trim() === "" || myInputNom.value.length < 3 || myInputNom.value.length > 15) {
             // Si le champ nom est vide, ajouter un message d'erreur
             myErrorNom.innerHTML = "Le champ nom est requis.";
             // Empêcher la soumission du formulaire
